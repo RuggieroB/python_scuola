@@ -9,12 +9,12 @@
 import math
 
 def quadrato(num):
-	num2=math.pow(num,2)
-	print("\nIl quadrato del numero",num,"è:\t",num2)
+	num2=num*num
+	return(num2)
 	
 def radice(num):
 	rad=math.sqrt(num)
-	print("La radice quadrata di",num,"è:\t",rad)
+	return(rad)
 
 scelta=0
 
@@ -27,8 +27,8 @@ while scelta<=0 or scelta>2:
 if scelta==1:
 	num=input("\nInserisci un numero intero:\t")
 	num=int(num)
-	quadrato(num)
+	print("\nIl quadrato del numero",num,"è:\t",quadrato(num))
 else:
 	num=input("\nInserisci un numero intero:\t")
 	num=int(num)
-	radice(num)
+	print("La radice quadrata di",num,"è:\t",radice(num))
